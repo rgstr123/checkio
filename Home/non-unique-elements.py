@@ -3,7 +3,6 @@
 # Your optional code here
 # You can import some modules or create additional functions
 
-
 def checkio(lst):
     # Your code here
     # It's main function. Don't remove this function
