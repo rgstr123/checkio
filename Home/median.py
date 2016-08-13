@@ -1,5 +1,6 @@
 # coding: utf8
 
+
 def checkio(data):
     # replace this for solution
 
