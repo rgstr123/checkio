@@ -10,6 +10,7 @@ def checkio(opacity):
 
     maxOpacity = 10000
     age = 0
+
     while maxOpacity != opacity:
         age += 1
         if age in fibonacci:
