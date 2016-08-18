@@ -2,7 +2,7 @@
 
 def weak_point(matrix):
 
-    row_sum = []
+    row_sum = []    # Можно было написать row_sum=[sum(row) for row in matrix]
     column_sum =[]
 
     # Записываем в списки суммы строк и столбцов
