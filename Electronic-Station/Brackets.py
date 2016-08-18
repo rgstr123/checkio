@@ -22,14 +22,14 @@ def checkio(expression):
         else:
             # Убедимся, что была открывающаяся
             if len(lastopened) < 1:
-                print('Закрывающая кобка ' + char + ' была до открывающей ' + reverse[char])
+                print('Закрывающая скобка ' + char + ' была до открывающей ' + reverse[char])
                 nonlocal status
                 status = False
             else:
                 # Убедимся, что закрывающая скобка и открывающая совпадают
                 if char != brackets[lastopened[-1]]:
                     status = False
-                    print('Должна была быть такая ' + brackets[lastopened[-1]] + ' закрывающая кобка, но такая ' + char + ' встретилась раньше')
+                    print('Должна была быть такая ' + brackets[lastopened[-1]] + ' закрывающая скобка, но такая ' + char + ' встретилась раньше')
 
                 # Если пара скобок была правильно закрыта, то удаляем из списка последнюю открывающую
                 else:
