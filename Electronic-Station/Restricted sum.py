@@ -1,6 +1,7 @@
 def checkio(data):
     index = len(data)-1
     x = 0
+
     def func(len_data, data):
         if len_data >= 0:
             nonlocal x
