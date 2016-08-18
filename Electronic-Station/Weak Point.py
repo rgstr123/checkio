@@ -5,10 +5,12 @@ def weak_point(matrix):
     row_sum = []
     column_sum =[]
 
-    for x, y in zip(matrix, list(zip(*matrix))):
+    # Записываем в списки суммы строк и столбцов
+    for x, y in zip(matrix, list(zip(*matrix))):    # zip(*matrix) переворачивает массив, zip(array1, array2) позволяет проходиться по ним одновременно
         row_sum.append(sum(x))
         column_sum.append(sum(y))
 
+    # Ищем инндекс минимального эллемента в отсортированном массиве
     index_min_row = row_sum.index(sorted(row_sum)[0])
     index_min_column = column_sum.index(sorted(column_sum)[0])
 
