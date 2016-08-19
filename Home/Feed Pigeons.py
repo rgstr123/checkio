@@ -7,7 +7,7 @@ def checkio(number):
 
     while number > 0:
         for x in  next_pigeon:              # Проходим по списку очереди из следующих голубей
-            while x > 0:                    # Добавляем группу следующих шолубей в общий список
+            while x > 0:                    # Добавляем группу следующих голубей в общий список
                 num_of_pigeons.append(0)
                 x -= 1
             for y in range(len(num_of_pigeons)):    # Кормим
