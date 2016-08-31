@@ -92,7 +92,27 @@ def available_routes(from_, all_routes, used):
 
 
 
-
+#################################################################################################################
+#
+#             Без рекурсии. Похож на мой первый вариант решения, но у меня до конца так и не получилось
+#
+#
+# def checkio(teleports_string):
+#     routes = defaultdict(list)
+#     for route in teleports_string.split(','):
+#         routes[route[0]].append(route[1])
+#         routes[route[1]].append(route[0])
+#
+#     candidate = ['1' + s for s in routes['1']]
+#
+#     while True:
+#         road = candidate.pop()
+#         if road[-1] == '1' and len(set(road)) == 8:
+#             return road
+#         for next_route in routes[road[-1]]:
+#             if next_route + road[-1] in road or road[-1] + next_route in road: continue
+#             candidate.append(road + next_route)
+##################################################################################################################
 
 
 #This part is using only for self-testing
