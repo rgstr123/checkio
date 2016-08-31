@@ -70,7 +70,25 @@ def available_routes(from_, all_routes, used):
 
 
 
-
+###################################################################################################################
+#
+#                                                   Интересный вариант решения
+#
+# def checkio(string, length=8, start='1'):
+#     def explore(edges, route):
+#         node = route[-1]
+#         print("node",node)
+#         if node == start and len(set(route)) == length:
+#             raise StopIteration(route)
+#
+#         for edge in (edge for edge in edges if node in edge):
+#             print(edge)
+#             print(edges)
+#             explore(edges - {edge}, route + edge.replace(node, ''))
+#
+#     try: explore(set(string.split(',')), start)
+#     except StopIteration as found: return found.value
+###################################################################################################################
 
 
 
