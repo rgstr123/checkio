@@ -3,7 +3,7 @@ def checkio(n, m):
     trailing_len = max(len(bin(m))-2, len(bin(n))-2)
     n = format(n, '0{0}b'.format(trailing_len))
     m = format(m, '0{0}b'.format(trailing_len))
-    return sum(i!=j for i ,j in zip(n,m))
+    return sum(i != j for i, j in zip(n, m))
 
 #############################################################################
 #                             Можно и так
