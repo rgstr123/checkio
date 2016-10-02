@@ -14,7 +14,6 @@ def probability(dice_number, sides, target):
         if sum(i) == target:
             itemCount = [len([k for k in j]) for _, j in groupby(i)]
             koli4estvo_ishodov_target += factorial(len(i)) / reduce(lambda x, y: x * y, map(factorial, itemCount))
-
     return koli4estvo_ishodov_target/vsego_ishodov
 
 
